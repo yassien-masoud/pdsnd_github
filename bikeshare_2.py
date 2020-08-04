@@ -105,6 +105,7 @@ def station_stats(df):
     
 
 def trip_duration_stats(df):
+    # Refactoring the trip duration stats 
     """Displays statistics on the total and average trip duration."""
 
     print('\nCalculating Trip Duration...\n')
@@ -151,6 +152,7 @@ def user_stats(df):
 
 
 def main():
+
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
